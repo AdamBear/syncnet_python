@@ -38,7 +38,8 @@ dists = []
 for idx, fname in enumerate(flist):
     offset, conf, dist = s.evaluate(opt,videofile=fname)
     dists.append(dist)
-      
+
+print(dists)
 # ==================== PRINT RESULTS TO FILE ====================
 
 with open(os.path.join(opt.work_dir,opt.reference,'activesd.pckl'), 'wb') as fil:
